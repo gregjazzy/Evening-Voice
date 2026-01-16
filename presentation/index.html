@@ -881,6 +881,7 @@
 
     .chat-message {
       display: flex;
+      align-items: flex-start;
       gap: 15px;
       margin-bottom: 18px;
     }
@@ -901,11 +902,12 @@
     }
 
     .chat-message.child .chat-avatar {
-      background: linear-gradient(135deg, rgba(255, 182, 193, 0.4), rgba(255, 150, 170, 0.3));
+      background: linear-gradient(135deg, #e896aa, #d4758f);
       font-family: 'Playfair Display', serif;
       font-size: 1.1rem;
-      font-weight: 600;
-      color: #fff;
+      font-weight: 700;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff;
     }
 
     .chat-message.luna .chat-avatar {
@@ -1491,7 +1493,15 @@
       .slide[data-slide="7"] .chat-avatar {
         width: 28px;
         height: 28px;
+        min-width: 28px;
+        min-height: 28px;
         font-size: 0.8rem;
+        flex-shrink: 0;
+      }
+
+      .slide[data-slide="6"] .child-avatar,
+      .slide[data-slide="7"] .child-avatar {
+        transform: translateY(70px);
       }
 
       .slide[data-slide="6"] .chat-bubble,
