@@ -1,159 +1,202 @@
-# 📋 Handover - Présentation Client "La Voix du Soir"
+# 📋 Handover — The Evening Voice Presentation
 
-> Présentation web style Keynote pour la cliente multi-milliardaire
+> Présentation web style Keynote pour cliente milliardaire
 
-**Date** : 15 janvier 2026  
-**État** : ✅ Prête (22 slides)
+**Date** : 16 janvier 2026  
+**État** : 🔄 En cours — Problème CSS à corriger
 
 ---
 
 ## 🎯 Contexte
 
 **Client** : Top 40 fortunes mondiales (~10 milliards €)  
-**Projet** : Application "La Voix du Soir" pour ses 2 filles de 8 ans  
-**Statut** : **VENDU** — présentation de l'application commandée
+**Projet** : Application "The Evening Voice" pour ses 2 filles  
+**Langue** : Anglais (traduit du français)  
+**Déploiement** : https://evening-voice.netlify.app (auto-deploy depuis GitHub)
 
-### Ce que contient ce dossier
+---
+
+## 📁 Structure du projet
 
 ```
 Voice/
-└── presentation/
-    └── index.html    ← La présentation (22 slides)
+├── presentation/
+│   ├── index.html              ← La présentation (20 slides)
+│   ├── background.png          ← Image de fond (fille + lanterne)
+│   ├── 01-journal-accueil.png  ← Screenshots de l'app
+│   ├── 02-ecriture-liste.png
+│   ├── 03-ecriture-histoire-editeur.png
+│   ├── 04-montage-selection.png
+│   ├── 05-montage-editeur-complet.png
+│   ├── 06-montage-effets-selection.png
+│   ├── 07-studio-creation.png
+│   └── 08-theatre-vide.png
+├── netlify.toml                ← Config Netlify (publish: presentation/)
+└── HANDOVER.md                 ← Ce fichier
 ```
 
 ---
 
-## 🚀 Lancer la présentation
+## 🚀 Lancer en local
 
 ```bash
-cd presentation
-python3 -m http.server 3003
+cd /Users/gregorymittelette/Dev/Voice
+python3 -m http.server 3004
 ```
 
-Puis ouvrir → **http://localhost:3003**
+Puis ouvrir → **http://localhost:3004/presentation/index.html**
 
 ### Navigation
-- **← →** Flèches clavier pour naviguer
-- **Points à droite** pour accès direct aux slides
-- Scroll automatique **désactivé**
+- **← →** Flèches clavier
+- **Home** Premier slide
+- **End** Dernier slide
+- **Swipe** sur mobile
 
 ---
 
-## 📊 Structure des 22 slides
+## 📊 Structure des 20 slides
 
 | # | Slide | Contenu |
 |---|-------|---------|
-| 1 | **La Voix du Soir** | Titre + tagline |
-| 2 | **Pour Vos Filles** | 4 colonnes : IA, Créer, Publier, Ordinateur |
-| 3 | **Les Objectifs** | 6 objectifs pédagogiques avec "Comment" |
-| 4 | **Luna, l'Amie IA** | Présentation de Luna (8 ans, guide) |
-| 5 | **Luna - Création d'Images** | Dialogue exemple avec les 5 Clés |
-| 6 | **Luna - Écriture** | Dialogue exemple avec les 5 Questions |
-| 7 | **La Philosophie** | 5 règles de Luna |
-| 8 | **5 Clés Magiques** | Synoptique prompting images |
-| 9 | **5 Questions Magiques** | Synoptique écriture |
-| 10 | **Parcours de Maîtrise** | Niveaux (Explorateur → Maître) |
-| 11 | **Cinq Univers Créatifs** | Les 5 modes de l'app |
-| 12 | **L'Expérience Théâtre** | AirPlay + Philips Hue |
-| 13 | **L'Horizon** | Vision Amazon KDP |
-| 14-15 | **Synoptiques techniques** | Prompting & Progression |
-| 16-17 | **Design Immersif** | Métaphore livre, animations |
-| 18 | **Comment Gemini Fonctionne** | Schéma IA conceptuel |
-| 19 | **Multimodal** | Images, Vidéos, Voix |
-| 20 | **Tech Stack** | Technologies utilisées |
-| 21 | **Fonctionnalités** | Desktop, iPad, Multilingue |
-| 22 | **Mon Engagement** | Garanties personnelles |
+| 1 | **The Evening Voice** | Titre + background avec fille/lanterne |
+| 2 | **The Vision** | Objectifs : prompting, autonomie, publication |
+| 3 | **Six Pedagogical Objectives** | 6 cartes numérotées |
+| 4 | **Luna, the AI Friend** | Présentation de Luna (avatar + traits) |
+| 5 | **The Pedagogical Philosophy** | Quote + autonomie + transferable skills |
+| 6 | **Luna's 3 Golden Rules** | Friend not teacher, Guide with questions, Never do it for them |
+| 7 | **Luna in Action — Images** | Dialogue exemple (5 Magic Keys) |
+| 8 | **Luna in Action — Writing** | Dialogue exemple (5 Magic Questions) |
+| 9 | **The 5 Magic Questions** | WHO, WHAT, WHERE, WHEN, AND THEN |
+| 10 | **The 5 Magic Keys** | Style, Hero, Mood, World, Magic |
+| 11 | **Mentor Mode** | Electron + WebRTC, live video, shared control |
+| 12 | **Invisible Progression** | Niveaux : Curious → AI Master |
+| 13 | **The Creative Journey** | Journal → Writing → Studio → Editing → Theater |
+| 14 | **Writing Mode** | Screenshot + features list |
+| 15 | **Editing Mode** | Screenshot + features list |
+| 16 | **Theater Mode** | AirPlay, Chromecast, HDMI, DLNA, Hue |
+| 17 | **Smart Home Integration** | Philips Hue ambiances |
+| 18 | **Three Native Languages** | English, Russian, French |
+| 19 | **The Curriculum** | ⚠️ NOUVEAU — 3 disciplines + 3 pillars + Mentor Dashboard |
+| 20 | **Final** | The Evening Voice — closing |
 
 ---
 
-## ✏️ Modifications de la session (15 janvier 2026)
+## ✏️ Modifications récentes (16 janvier 2026)
+
+### Session actuelle
 
 | Action | Détail |
 |--------|--------|
-| ✅ **Slide 2 refaite** | 4 colonnes visuelles (+ "Maîtriser l'Ordinateur") |
-| ✅ **Slide commercial supprimée** | "Prêtes à Créer ?" — déjà vendu |
-| ✅ **"Notre" → "Mon"** | Engagement personnel, pas collectif |
-| ✅ **26 → 22 slides** | Suppression redondances |
+| ✅ **Slide "The Curriculum" créée** | Remplace "What the Girls Learn" |
+| ✅ **Vocabulaire prestigieux** | Prompt Engineering Mastery, Narrative Architecture, Visual Direction |
+| ✅ **3 Pillars of Excellence** | Linguistic Precision, Cause & Effect Logic, Strategic Multilingualism |
+| ✅ **Mentor Mode Dashboard** | Mention analytics de progression |
+| ✅ **Layout 2 colonnes** | Disciplines à gauche, Pillars à droite (centrés) |
+| 🔄 **Problème background** | Image ne couvre pas toute la largeur sur grands écrans |
+
+### Sessions précédentes
+
+| Action | Détail |
+|--------|--------|
+| ✅ **Traduction anglais** | Toute la présentation traduite |
+| ✅ **"l'enfant" → "the girls"** | Adapté au contexte |
+| ✅ **Slide Mentor Mode ajoutée** | Electron + WebRTC |
+| ✅ **Version mobile** | Responsive iPhone Pro Max |
+| ✅ **Emojis remplacés** | Icônes SVG Apple-style |
+| ✅ **Déploiement Netlify** | Auto-deploy depuis GitHub |
 
 ---
 
-## 💡 Points clés pour la cliente
+## 🐛 Bug en cours
 
-### Ce qu'elle veut entendre
+### Problème : Background qui ne couvre pas toute la largeur
 
-1. **Émotionnel** — C'est pour ses filles, moments en famille
-2. **Pédagogique** — Apprentissage IA sérieux (elle connaît l'IA)
-3. **Technique** — Jargon OK, justifie le prix/la technicité
-4. **Vision** — Ses filles pourront publier un vrai livre
+**Symptôme** : Sur les slides titre et final, l'image `background.png` ne couvre pas toute la largeur de l'écran — bande grise/violette visible à droite.
 
-### Ce qu'il ne faut PAS faire
+**Cause probable** : L'image a une résolution fixe et le CSS `background-size: cover` ne fonctionne pas correctement sur très grands écrans.
 
-- ❌ Discours commercial (c'est vendu)
-- ❌ Simplifier à l'excès (elle connaît l'IA)
-- ❌ "Faire de la politique" (être direct)
+**CSS actuel** (ligne ~147) :
+```css
+.title-slide {
+  background: linear-gradient(...),
+              url('./background.png') center center / cover no-repeat;
+}
+```
+
+**Solutions possibles** :
+1. Utiliser une image plus large ou générer un pattern qui se répète
+2. Ajouter un fallback avec `background-color` qui match les bords de l'image
+3. Forcer `min-width: 100vw` sur le slide
 
 ---
 
-## 🎨 Design de la présentation
+## 🎨 Design
 
 ### Palette
-- **Fond** : Dégradé violet profond (#1a0a2e → #2d1b4e)
-- **Accent** : Or (#d4af37)
-- **Texte** : Blanc cassé (#f5f5f5)
+- **Fond** : Dégradé violet (#1a0a2e → #2d1b4e → #4a2c7a)
+- **Accent** : Or (#C9A962, #E8D5A3, #8B7355)
+- **Texte** : Blanc cassé (#FEFEFE)
 
 ### Typographies
-- **Titres** : Cormorant Garamond (serif élégant)
-- **Corps** : Montserrat (sans-serif moderne)
+- **Titres** : Playfair Display (serif élégant)
+- **Corps** : Cormorant Garamond (serif classique)
+- **UI** : Montserrat (sans-serif)
 
 ### Effets
-- Étoiles animées en arrière-plan
-- Animations d'entrée sur chaque slide
-- Lune dorée dans le header
+- Étoiles animées (twinkle)
+- Lueur de lanterne pulsante
+- Animations d'entrée (fadeInUp)
 
 ---
 
-## 🔗 Lien avec le projet principal
+## 🔗 Liens
 
-Cette présentation décrit l'application **La Voix du Soir** dont le code source est dans :
-
-```
-/Users/gregorymittelette/Dev/lavoixdusoir/
-```
-
-La présentation a été **copiée** ici (pas déplacée) — l'original reste dans `lavoixdusoir/presentation/`.
+- **GitHub** : https://github.com/gregjazzy/Evening-Voice
+- **Netlify** : https://evening-voice.netlify.app
+- **Projet principal** : `/Users/gregorymittelette/Dev/lavoixdusoir/`
 
 ---
 
-## 📝 Pour modifier la présentation
+## 📝 Pour modifier
 
-Le fichier `presentation/index.html` contient tout :
-- HTML des slides
-- CSS intégré (styles, animations)
-- JavaScript (navigation, effets)
+Le fichier `presentation/index.html` contient tout (HTML + CSS + JS).
 
-### Structure d'une slide
-
+### Structure d'un slide
 ```html
-<section class="slide stars" data-slide="X">
-  <h2 class="animate-in animate-in-1">Titre</h2>
-  <p class="animate-in animate-in-2">Contenu...</p>
+<section class="slide content-centered stars" data-slide="X">
+  <h2 class="section-header animate-in">Titre</h2>
+  <p class="paragraph animate-in animate-in-delay-1">Contenu...</p>
 </section>
 ```
 
-### Classes utiles
-- `.stars` — Ajoute les étoiles animées
-- `.animate-in-X` — Animation d'entrée (X = ordre)
-- `.feature-card` — Carte avec bordure dorée
+### Classes importantes
+- `.stars` — Étoiles animées en fond
+- `.title-slide` / `.final-slide` — Slides avec background image
+- `.split-slide` — Layout 2 colonnes (image + contenu)
+- `.animate-in-delay-X` — Animation décalée (1, 2, 3, 4)
+
+### Media queries
+- Desktop : par défaut
+- Tablette : `@media (max-width: 1200px)`
+- Mobile : `@media (max-width: 480px)`
 
 ---
 
 ## ✅ Checklist avant présentation
 
-- [ ] Serveur lancé (`python3 -m http.server 3003`)
-- [ ] Navigateur en plein écran (F11 ou Cmd+Shift+F)
-- [ ] Commencer à la slide 1 (touche Home)
-- [ ] Tester les flèches ← →
+- [ ] Bug background corrigé
+- [ ] Tester sur l'écran de présentation réel
+- [ ] Navigateur en plein écran (F11 / Cmd+Shift+F)
+- [ ] Commencer slide 1 (touche Home)
+- [ ] Tester navigation ← →
 
 ---
 
-**Bonne présentation !** 🌙✨
+## 📞 Contact
+
+Dernière modification par : **Claude (Cursor AI)**  
+Date : 16 janvier 2026
+
+---
+
+**Bonne chance pour la suite !** 🌙✨
