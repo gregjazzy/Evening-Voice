@@ -1216,6 +1216,59 @@
         overflow-y: auto;
       }
 
+      /* Security & Privacy + Legacy slides - align with Curriculum */
+      .slide[data-slide="19"] {
+        justify-content: flex-start;
+        padding-top: 35px;
+      }
+      
+      .slide[data-slide="20"] {
+        justify-content: flex-start;
+        padding-top: 50px;
+      }
+
+      .slide[data-slide="20"] .section-header {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+      }
+
+      .slide[data-slide="20"] .paragraph {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      .slide[data-slide="20"] .grid-2 {
+        gap: 12px;
+      }
+
+      .slide[data-slide="20"] .card {
+        padding: 15px !important;
+      }
+
+      .slide[data-slide="20"] .card-icon {
+        font-size: 1.5rem !important;
+        margin-bottom: 5px !important;
+      }
+
+      .slide[data-slide="20"] .card h3 {
+        font-size: 1rem !important;
+        margin-bottom: 5px;
+      }
+
+      .slide[data-slide="20"] .card p {
+        font-size: 0.8rem !important;
+        line-height: 1.4;
+      }
+
+      .slide[data-slide="20"] .quote-block {
+        margin-top: 15px !important;
+        padding: 12px 15px !important;
+      }
+
+      .slide[data-slide="20"] .quote-block p {
+        font-size: 0.95rem !important;
+      }
+
       /* Only slides with grids/lots of content need flex-start */
       .slide[data-slide="2"],
       .slide[data-slide="5"],
@@ -2909,8 +2962,83 @@
       </div>
     </section>
 
-    <!-- SLIDE 19: FINAL -->
-    <section class="slide final-slide" data-slide="19">
+    <!-- SLIDE 19: SECURITY & PRIVACY -->
+    <section class="slide content-centered stars" data-slide="19">
+      <h2 class="section-header animate-in">Security & Privacy</h2>
+      <p class="paragraph animate-in animate-in-delay-1" style="margin-bottom: 40px;">
+        Their stories, their secrets — <span class="highlight">protected forever</span>
+      </p>
+      <div class="grid-3 animate-in animate-in-delay-2">
+        <div class="card apple-card">
+          <div class="apple-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </div>
+          <h3>End-to-End Encryption</h3>
+          <p>All data encrypted locally before sync</p>
+        </div>
+        <div class="card apple-card">
+          <div class="apple-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>Private Cloud</h3>
+          <p>Your own secure server — no third party access</p>
+        </div>
+        <div class="card apple-card">
+          <div class="apple-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3>Family Control</h3>
+          <p>Parents decide who sees what, always</p>
+        </div>
+      </div>
+      <p class="paragraph animate-in animate-in-delay-3" style="margin-top: 40px; font-size: 1.1rem;">
+        <span class="highlight">Zero data collection</span> — no ads, no tracking, no monetization.<br>
+        The girls' creativity belongs to <span class="highlight">them alone</span>.
+      </p>
+    </section>
+
+    <!-- SLIDE 20: DIGITAL LEGACY -->
+    <section class="slide content-centered stars" data-slide="20">
+      <h2 class="section-header animate-in" style="margin-bottom: 30px;">A Legacy for Life</h2>
+      <p class="paragraph animate-in animate-in-delay-1" style="margin-bottom: 30px; font-size: 1.3rem;">
+        In <span class="highlight">10 years</span>, in <span class="highlight">20 years</span>...
+        they will rediscover their childhood treasures
+      </p>
+      <div class="grid-2 animate-in animate-in-delay-2" style="max-width: 1000px; gap: 25px;">
+        <div class="card" style="padding: 25px;">
+          <span class="card-icon" style="font-size: 2rem; margin-bottom: 10px;">📚</span>
+          <h3 style="font-size: 1.2rem;">Every Story Preserved</h3>
+          <p style="font-size: 0.95rem;">Their journals, their tales, their secret thoughts — saved in beautiful digital books.</p>
+        </div>
+        <div class="card" style="padding: 25px;">
+          <span class="card-icon" style="font-size: 2rem; margin-bottom: 10px;">🎬</span>
+          <h3 style="font-size: 1.2rem;">Every Creation Archived</h3>
+          <p style="font-size: 0.95rem;">Images, videos, voice recordings — a complete archive of their creative journey.</p>
+        </div>
+        <div class="card" style="padding: 25px;">
+          <span class="card-icon" style="font-size: 2rem; margin-bottom: 10px;">💝</span>
+          <h3 style="font-size: 1.2rem;">Memories with Family</h3>
+          <p style="font-size: 0.95rem;">The evening shows, the shared moments — captured and preserved forever.</p>
+        </div>
+        <div class="card" style="padding: 25px;">
+          <span class="card-icon" style="font-size: 2rem; margin-bottom: 10px;">🔮</span>
+          <h3 style="font-size: 1.2rem;">Growing with Them</h3>
+          <p style="font-size: 0.95rem;">Export as printed books, video compilations, or keep in the app — forever.</p>
+        </div>
+      </div>
+      <div class="quote-block animate-in animate-in-delay-3" style="margin-top: 25px; padding: 20px 30px;">
+        <p style="font-size: 1.3rem;">"One day, they'll show their own children: <span class="highlight">'Look, this is the story I wrote when I was 8...'</span>"</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 21: FINAL -->
+    <section class="slide final-slide" data-slide="21">
       <div class="final-content">
         <h2 class="animate-in">The Evening Voice</h2>
         <p class="animate-in animate-in-delay-1">
